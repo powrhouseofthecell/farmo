@@ -1,0 +1,34 @@
+{{ header }}
+<div id="information-information" class="container">
+  <ul class="breadcrumb">
+    {% for breadcrumb in breadcrumbs %}
+    <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+    {% endfor %}
+  </ul>
+  <div class="row">{{ column_left }}
+    {% if column_left and column_right %}
+    {% set class = 'col-sm-6' %}
+    {% elseif column_left or column_right %}
+    {% set class = 'col-sm-9' %}
+    {% else %}
+    {% set class = 'col-sm-12' %}
+    {% endif %}
+    <div id="content" class="{{ class }}">{{ content_top }}
+      <h1 class="page-title">{{ heading_title }}</h1>
+      <!-- <h2>This would do something</h2>  -->
+      <p style="padding-bottom: 10px;" >Organic farming has been there for well over a century now. Interestingly, the products have not penetrated as deep as they ought to have in all that time. </p>
+      <p style="padding-bottom: 10px;">We, at Farm’O, strongly believe that organic food is the only way forward for mankind, and the sooner we realise this, the better the world we live in will get. With the aim of bringing 100% organic products to your table, we have taken this small step and added to the efforts that other like-minded people have been making. </p>
+      <p style="padding-bottom: 10px;">Based in Kashmir, the pristine Himalayan region of India, the region is still untouched by urbanisation and the produce of the land is natural, nutritious, and free of synthetics. </p>
+      <p style="padding-bottom: 10px;">We are ensuring that the food we put on your table is grown in an organic manner, handpicked, while the addition of harmful preservatives is shunned through and through. </p>
+      <p style="padding-bottom: 10px;">Our mission is to grow with this aim and belief and earn your trust, to become an inseparable part of your food habits. We wish you good health and we are working towards it as well.</p>
+      <h2>Morels</h2>
+      <p>
+        Morels are not grown, they are found and they are a delight to be found. In the untouched Himalayan woods of Kashmir, herdsmen and members of the nomadic tribes pick morels in early summers.  </p>
+      <p>
+        Farm’O collects the morels from these nomads and herdsmen to bring these small wonders, rich in antioxidants, to your table. They are a cure for heart diseases, Parkinson’s, and diabetes. 
+      </p>
+ </div>
+      <!-- {{ description }}{{ content_bottom }}</div> -->
+    {{ column_right }}</div>
+</div>
+{{ footer }}

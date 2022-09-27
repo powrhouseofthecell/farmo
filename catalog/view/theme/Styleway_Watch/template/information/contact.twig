@@ -1,0 +1,206 @@
+{{ header }}
+<div id="information-contact" class="container">
+  <ul class="breadcrumb">
+    {% for breadcrumb in breadcrumbs %}
+    <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+    {% endfor %}
+  </ul>
+  <div class="row">{{ column_left }}
+    {% if column_left and column_right %}
+    {% set class = 'col-sm-6' %}
+    {% elseif column_left or column_right %}
+    {% set class = 'col-sm-9' %}
+    {% else %}
+    {% set class = 'col-sm-12' %}
+    {% endif %}
+    <div id="content" class="{{ class }}">{{ content_top }}
+	
+	<div class="contact-form">
+    	<h1 class="page-title">{{ heading_title }}</h1>
+			<div class="contact-form left">
+      		   <h3>{{ text_location }}</h3>
+			
+			   {% if image %} 
+					<div class="address-detail"><img src="{{ image }}" alt="{{ store }}" title="{{ store }}" class="img-thumbnail" /></div>
+			   {% endif %} 
+			   
+			   <div class="row">
+				   <div class="col-sm-6">
+						<div class="address-detail1">
+							<strong>{{ text_address }}: </strong>
+							 <address>
+							 		FarmO - The Organic Store
+							 <br>
+							 		507, Union Trade, Anantnag, Kashmir
+							 </address>
+						</div>
+						
+						{% if geocode %} 
+							<div class="map-btn"><a href="https://maps.google.com/maps?q={{ geocode|url_encode }} &hl={{ geocode_hl }} &t=m&z=15" target="_blank" class="btn btn-info"><i class="fa fa-map-marker"></i> {{ button_map }} </a></div>
+						{% endif %}
+				   </div>
+				   
+				   <div class="col-sm-6">
+						<div class="telephone">
+							<strong>{{ text_telephone }}: </strong>
+						   <address>:{{ telephone }}  </address>
+						</div>
+						
+						<div class="fax">
+						  {% if fax %} 
+						  <strong>{{ text_fax }}: </strong>
+						  <address>{{ fax }} </address>
+						  {% endif %}
+						</div>
+						
+						<div class="time">
+						  {% if open %}
+						  <strong>{{ text_open }}: </strong>
+						  {{ open }}
+						  <br />
+						  {% endif %}
+						</div>
+					</div> 
+					
+				</div>
+					<div class="comments col-sm-12">
+					  {% if comment %}
+					  <!-- <strong>{{ text_comment }}: </strong> -->
+					  <strong>Get to know us: </strong>
+					  <!-- {{ comment }} -->
+					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					  {% endif %}
+					</div> 
+			</div>
+      
+			{% if locations %}
+				<h3>{{ text_store }}</h3>
+				<div class="panel-group" id="accordion">
+					{% for location in locations %}
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+						<h4 class="panel-title"><a href="#collapse-location{{ location.location_id }}" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">{{ location.name }} <i class="fa fa-caret-down"></i></a></h4>
+					  </div>
+					  <div class="panel-collapse collapse" id="collapse-location{{ location.location_id }}">
+						<div class="panel-body">
+						  <div class="row">
+							
+							{% if location.image %}
+							<div class="col-sm-3"><img src="{{ location.image }}" alt="{{ location.name }}" title="{{ location.name }}" class="img-thumbnail" /></div>
+							{% endif %}
+							
+							<div class="col-sm-3"><strong>{{ location.name }}</strong><br />
+							  <address>
+							  {{ location.address }}
+							  </address>
+							  {% if location.geocode %}
+							  <a href="https://maps.google.com/maps?q={{ location.geocode|url_encode }}&hl={{ geocode_hl }}&t=m&z=15" target="_blank" class="btn btn-info"><i class="fa fa-map-marker"></i> {{ button_map }}</a>
+							  {% endif %}
+							</div> 
+							
+							<div class="col-sm-3"> <strong>{{ text_telephone }}</strong><br>
+							  {{ location.telephone }}<br />
+							  <br />
+							  {% if location.fax %}
+							  <strong>{{ text_fax }}</strong><br>
+							  {{ location.fax }}
+							  {% endif %}
+							</div>
+							
+							<div class="col-sm-3">
+							  {% if location.open %}
+							  <strong>{{ text_open }}</strong><br />
+							  {{ location.open }}<br />
+							  <br />
+							  {% endif %}
+							  {% if location.comment %}
+							  <strong>{{ text_comment }}</strong><br />
+							  {{ location.comment }}
+							  {% endif %}
+							</div>
+						  
+						  </div>
+						</div>
+					  </div>
+					</div>
+					{% endfor %}
+				  </div>
+			  {% endif %}
+	  
+			<div class="contact-form right">
+				<form action="{{ action }}" method="post" enctype="multipart/form-data" class="form-horizontal">
+					<fieldset>
+						  <h3>{{ text_contact }}</h3>
+						  <div class="form-group required">
+							<label class="col-sm-3 control-label" for="input-name">{{ entry_name }}</label>
+							<div class="col-sm-9">
+							  <input type="text" name="name" value="{{ name }}" id="input-name" class="form-control" />
+							  {% if error_name %}
+							  <div class="text-danger">{{ error_name }}</div>
+							  {% endif %}
+							</div>
+						  </div>
+						  <div class="form-group required">
+							<label class="col-sm-3 control-label" for="input-email">{{ entry_email }}</label>
+							<div class="col-sm-9">
+							  <input type="text" name="email" value="{{ email }}" id="input-email" class="form-control" />
+							  {% if error_email %}
+							  <div class="text-danger">{{ error_email }}</div>
+							  {% endif %}
+							</div>
+						  </div>
+						  <div class="form-group required">
+							<label class="col-sm-3 control-label" for="input-enquiry">{{ entry_enquiry }}</label>
+							<div class="col-sm-9">
+							  <textarea name="enquiry" rows="10" id="input-enquiry" class="form-control">{{ enquiry }}</textarea>
+							  {% if error_enquiry %}
+							  <div class="text-danger">{{ error_enquiry }}</div>
+							  {% endif %}
+							</div>
+						  </div>
+						{{ captcha }}
+					</fieldset>
+				
+					<div class="buttons">
+					  <div class="pull-right">
+						<input class="btn btn-primary" type="submit" value="{{ button_submit }}" />
+					  </div>
+					</div>
+				</form>
+			</div>	
+	</div>
+	
+	<div class="map" id="google_map" style="width:100%; height: 320px;"></div>
+	
+{{ content_bottom }}</div>
+{{ column_right }}</div>
+</div>
+{{ footer }}
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOgKBG0SbQowaKmm0GqdJPYsuuDlamDxM&callback=init_map" async defer></script>
+<script type = 'text/javascript' >
+	function init_map() {
+		var LatLng = { lat: 46.227638, lng: 2.213749 };
+		var map = new google.maps.Map(document.getElementById('google_map'), {
+			center: LatLng,
+			scrollwheel: false,
+			zoom: 10
+		});
+		var marker = new google.maps.Marker({
+			position: LatLng,
+			map: map
+		});			
+		infowindow = new google.maps.InfoWindow({
+		  content: '<strong>{{ store }}</strong>'
+		});			
+		google.maps.event.addListener(marker, 'click', function() {
+		  infowindow.open(map, marker);
+		});            
+		infowindow.open(map, marker);
+	}
+</script>

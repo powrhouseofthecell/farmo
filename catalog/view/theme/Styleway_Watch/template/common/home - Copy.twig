@@ -1,0 +1,88 @@
+{{ header }}
+<div class="content-top">
+	<div class="container">
+		{{ content_top }}
+	</div>
+</div>
+
+<div class="row home_row">
+	<div class="container">
+		{{ column_left }}
+		{% if column_left and column_right %}
+		{% set class = 'col-sm-6' %}
+		{% elseif column_left or column_right %}
+		{% set class = 'col-sm-9' %}
+		{% else %}
+		{% set class = 'col-sm-12' %}
+		{% endif %}
+		<div id="content" class="{{ class }}">{{ content_bottom }}</div>
+		{{ column_right }}
+	</div>
+</div>
+
+<span class="testimonial_default_width" style="display: none; visibility: hidden;"></span>
+
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+
+	   $('.special-carousel').owlCarousel({
+	        items: 2,
+	        singleItem: false,
+	        navigation: false,
+	        pagination: false,
+	        itemsDesktop : [1199,2],
+	        itemsDesktopSmall : [991,1],
+	        itemsTablet : [767,1]
+	    });
+	    // Custom Navigation Events
+	    $(".special-next").click(function(){
+	        $('.special-carousel').trigger('owl.next');
+	    })
+	    $(".special-prev").click(function(){
+	        $('.special-carousel').trigger('owl.prev');
+	    });
+
+        
+        $('.brand-carousel').owlCarousel({
+			items: 6,
+			itemsDesktop : [1459,5], 
+			itemsDesktopSmall : [1199,4], 
+			itemsTablet: [991,3],
+			itemsTabletSmall: [480,2], 
+			itemsMobile : [320,1],
+			singleItem: false,
+			navigation: false,
+			pagination: false,
+			autoPlay: true         
+		});
+
+		// Custom Navigation Events
+		$(".brand-next").click(function(){
+			$('.brand-carousel').trigger('owl.next');
+		});
+
+		$(".brand-prev").click(function(){
+			$('.brand-carousel').trigger('owl.prev');
+		});
+
+
+		$('#testimonial-carousel').owlCarousel({
+	        singleItem: true,
+	        navigation: true,
+	        pagination: false,
+	        autoPlay: false
+      	});
+		// Custom Navigation Events
+		$(".cztestimonial_next").click(function(){
+			$('#testimonial-carousel').trigger('owl.next');
+		})
+		$(".cztestimonial_prev").click(function(){
+			$('#testimonial-carousel').trigger('owl.prev');
+		}); 
+
+	});	
+</script>
+
+{{ footer }}

@@ -1,0 +1,67 @@
+/* CSS Document */
+.swiper-viewport {
+	margin: 0px;
+	z-index: 1;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+/* OpenCart Code */
+.main-slider .swiper-wrapper, .swiper-container {
+	direction: ltr !important;
+}
+.swiper-pagination {
+	bottom: 5px;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	display: none;
+}
+.main-slider:hover .swiper-pagination {
+    display: block;
+}
+.swiper-pagination-bullet {
+	width: 10px;
+	display: inline-block;
+	height: 10px;
+	background: #000000;
+	margin: 0 4px;
+	opacity: 1;
+	text-indent: -9999px;
+	cursor: pointer;
+	border-radius: 0px;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+	border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet-active {
+	background: #00509d;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all 500ms ease 0s;
+    -moz-transition: all 500ms ease 0s;
+    -o-transition: all 500ms ease 0s;
+    transition: all 500ms ease 0s;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+@media(max-width:991px){
+	.swiper-pagination {
+		display: block;
+	}
+}
