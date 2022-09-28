@@ -7,9 +7,13 @@
 	  {# <div class="nav-responsive"><span>Menu</span><div class="expandable"></div></div> #}
  
       <ul class="nav navbar-nav">
-	  	
+	  	{# <ol style="display:flex";>
+    {% for key, value in _context  %}
+      <li>{{ key }}</li>
+    {% endfor %}
+</ol> #}
 		{#<li class="top_level home"><a href="{{ index }}">{{ text_home }}</a></li>#}
-    	{% for category in categories %}
+    	{# {% for category in categories %}
         {% if category.children %}
 			<li class="top_level dropdown"><a href="{{ category.href }}">{{ category.name }}</a>
 
@@ -49,7 +53,16 @@
         {% else %}
 			<li class="top_level"><a href="{{ category.href }}">{{ category.name }}</a></li>
         {% endif %}
-        {% endfor %}
+        {% endfor %} #}
+		{# Products #}
+		
+		<li class="top_level"> <a href="http://localhost/farmo/index.php?route=product/product&product_id=50">Almonds</a></li> 
+		<li class="top_level"> <a href="http://localhost/farmo/index.php?route=product/product&product_id=42">Walnuts</a></li> 
+		<li class="top_level"> <a href="http://localhost/farmo/index.php?route=product/product&product_id=53">Honey</a></li> 
+		<li class="top_level"> <a href="http://localhost/farmo/index.php?route=product/product&product_id=52">Saffron</a></li> 
+		<li class="top_level"> <a href="">Morels</a></li> 
+		
+		{# Products End Here #}
 		{% if blog_enable %}
 			<li class="top_level"> <a href="{{all_blogs}}">{{ text_blog }} </a></li>       
 		{% endif %}

@@ -7,6 +7,7 @@ class ControllerCommonMenu extends Controller {
 
 		$this->load->model('catalog/product');
 
+		$data['products'] = array();
 		$data['categories'] = array();
 		$data['all_blogs'] = $this->url->link('information/blogger/blogs');
 		
