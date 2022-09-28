@@ -4742,7 +4742,7 @@ h2.price {
 
 .main-slider {
    /* position: relative; */
-   width: 100vw!important;
+   /* width: 100vw !important; */
 }
 .main-slider .swiper-pager div {
    text-decoration: none;
@@ -4792,10 +4792,12 @@ h2.price {
    content: '\f105';
 }
 .main-slider .swiper-pager .swiper-button-prev {
-   left: -30px;
+   /* left: -30px; */
+   left: 30px;
 }
 .main-slider .swiper-pager .swiper-button-next {
-   right: -30px;
+   /* right: -30px; */
+   right: 30px;
    text-align: right;
    border-radius: 5px 0px 0px 5px;
 }
