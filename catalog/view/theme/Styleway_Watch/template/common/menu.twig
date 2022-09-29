@@ -56,11 +56,11 @@
         {% endfor %} #}
 		{# Products #}
 		
-		<li class="top_level"> <a href="http://localhost/farmo/index.php?route=product/product&product_id=50">Almonds</a></li> 
+		<li class="top_level"> <a href="http://localhost/farmo/index.php?route=product/product&product_id=50">Apricots</a></li> 
 		<li class="top_level"> <a href="http://localhost/farmo/index.php?route=product/product&product_id=42">Walnuts</a></li> 
 		<li class="top_level"> <a href="http://localhost/farmo/index.php?route=product/product&product_id=53">Honey</a></li> 
 		<li class="top_level"> <a href="http://localhost/farmo/index.php?route=product/product&product_id=52">Saffron</a></li> 
-		<li class="top_level"> <a href="">Morels</a></li> 
+		<li class="top_level"> <a href="http://localhost/farmo/index.php?route=product/product&product_id=54">Morels</a></li> 
 		
 		{# Products End Here #}
 		{% if blog_enable %}
@@ -77,7 +77,7 @@
 	<div class="nav-responsive"><div class="expandable"><span>{{ text_menu }}</span></div></div>
     <ul class="main-navigation">
 	<div class="menu expandable"><span>{{ text_menu }}</span></div>
-		{% for category in categories %}
+		{# {% for category in categories %}
 			<li class="top_level dropdown"><a href="{{ category.href }}">{{ category.name }}</a>
 			{% if category.children %}
 				{% for children in category.children|batch(category.children|length / category.column|round(1, 'ceil')) %}
@@ -102,7 +102,14 @@
 				{% endfor %}
 			{% endif %}
 			</li>
-		{% endfor %}
+		{% endfor %} #}
+
+		{# Currently we are displaying the 5 products directly   #}
+		<li> <a href="http://localhost/farmo/index.php?route=product/product&product_id=50">Apricots </a></li> 
+		<li> <a href="http://localhost/farmo/index.php?route=product/product&product_id=42">Walnuts </a></li> 
+		<li> <a href="http://localhost/farmo/index.php?route=product/product&product_id=53">Honey </a></li> 
+		<li> <a href="http://localhost/farmo/index.php?route=product/product&product_id=52">Saffron </a></li> 
+		<li> <a href="http://localhost/farmo/index.php?route=product/product&product_id=54">Morels </a></li> 
 		{% if blog_enable %}
 				<li> <a href="{{all_blogs}}">{{ text_blog }} </a></li>       
 		{% endif %}

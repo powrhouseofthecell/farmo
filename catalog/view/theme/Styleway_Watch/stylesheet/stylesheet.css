@@ -4673,9 +4673,76 @@ h2.price {
    position: absolute;
    z-index: 9999;
 }
-.main-slider {
+/* .main-slider {
    position: relative;
    width: 100%;
+}
+.main-slider .swiper-pager div {
+   text-decoration: none;
+   display: block;
+   margin: -25px 0 0;
+   position: absolute;
+   top: 50%;
+   z-index: 8;
+   overflow: hidden;
+   opacity: 1;
+   cursor: pointer;
+   background: #000000;
+   color: #fff;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   font-size: 0px;
+   line-height: 1;
+   height: 50px;
+   width: 30px;
+   line-height: 50px;
+   padding: 0 10px;
+   border-radius: 0px 5px 5px 0px;
+}
+.main-slider .swiper-pager div:before {
+   font-family: 'FontAwesome';
+   font-size: 26px;
+   display: inline-block;
+   color: #fff;
+   font-weight: 300;
+}
+.main-slider .swiper-pager div:hover {
+   background-color: rgb(15, 14, 14);
+}
+.main-slider:hover .swiper-pager div {
+   opacity: 1;
+}
+.main-slider .swiper-pager div:hover:before {
+   color: #fff;
+}
+.main-slider .swiper-pager .swiper-button-prev:before {
+   content: '\f104';
+}
+.main-slider .swiper-pager .swiper-button-next:before {
+   content: '\f105';
+}
+.main-slider .swiper-pager .swiper-button-prev {
+   left: -30px;
+}
+.main-slider .swiper-pager .swiper-button-next {
+   right: -30px;
+   text-align: right;
+   border-radius: 5px 0px 0px 5px;
+}
+.main-slider:hover .swiper-pager .swiper-button-prev {
+   left: 0px;
+}
+.main-slider:hover .swiper-pager .swiper-button-next {
+   right: 0px;
+} */
+/* custom slider styling */
+
+.main-slider {
+   /* position: relative; */
+   /* width: 100vw !important; */
 }
 .main-slider .swiper-pager div {
    text-decoration: none;
@@ -4740,75 +4807,6 @@ h2.price {
 .main-slider:hover .swiper-pager .swiper-button-next {
    right: 0px;
 }
-/* custom slider styling */
-
-/* .main-slider {
-   position: relative;
-   width: 90vw!important;
-}
-.main-slider .swiper-pager div {
-   text-decoration: none;
-   display: block;
-   margin: -25px 0 0;
-   position: absolute;
-   top: 50%;
-   z-index: 8;
-   overflow: hidden;
-   opacity: 1;
-   cursor: pointer;
-   background: #000000;
-   color: #fff;
-   -webkit-transition: all 0.3s ease-in-out;
-   -moz-transition: all 0.3s ease-in-out;
-   -ms-transition: all 0.3s ease-in-out;
-   -o-transition: all 0.3s ease-in-out;
-   transition: all 0.3s ease-in-out;
-   font-size: 0px;
-   line-height: 1;
-   height: 50px;
-   width: 30px;
-   line-height: 50px;
-   padding: 0 10px;
-   border-radius: 0px 5px 5px 0px;
-}
-.main-slider .swiper-pager div:before {
-   font-family: 'FontAwesome';
-   font-size: 26px;
-   display: inline-block;
-   color: #fff;
-   font-weight: 300;
-}
-.main-slider .swiper-pager div:hover {
-   background-color: rgb(15, 14, 14);
-}
-.main-slider:hover .swiper-pager div {
-   opacity: 1;
-}
-.main-slider .swiper-pager div:hover:before {
-   color: #fff;
-}
-.main-slider .swiper-pager .swiper-button-prev:before {
-   content: '\f104';
-}
-.main-slider .swiper-pager .swiper-button-next:before {
-   content: '\f105';
-}
-.main-slider .swiper-pager .swiper-button-prev {
-   left: -30px;
-}
-.main-slider .swiper-pager .swiper-button-next {
-   right: -30px;
-   text-align: right;
-   border-radius: 5px 0px 0px 5px;
-}
-.main-slider:hover .swiper-pager .swiper-button-prev {
-   left: 0px;
-}
-.main-slider:hover .swiper-pager .swiper-button-next {
-   right: 0px;
-} */
-
-
 .information-sitemap .sitge-map ul {
    padding: 0 0 0 20px;
 }
