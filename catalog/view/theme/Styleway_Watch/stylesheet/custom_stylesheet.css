@@ -26,6 +26,10 @@ a:hover {
    display: none !important;
 }
 
+#content{
+   padding-top:4rem!important;
+}
+
 /* Typography */
 .font--bold {
    font-weight: 600 !important;
@@ -95,6 +99,10 @@ a:hover {
 }
 
 /* Margin and padding classes ends here */
+
+
+
+
 
 /* flex classes starts here */
 
@@ -208,7 +216,9 @@ body {
    padding-left: 3rem !important;
    padding-right: 3rem !important;
 }
-
+.box{
+   padding-top:2rem!important;
+}
 .czbanner_container {
    display: flex !important;
    justify-content: center;
@@ -481,6 +491,7 @@ body {
       flex-direction: column !important;
       justify-content: center;
    }
+   
    .c--flex {
       display: flex;
       flex-direction: column;
@@ -489,15 +500,54 @@ body {
       padding: 3rem 8px !important;
       margin: 0 !important;
    }
-   
+   /* All pages */
+
+   #content{
+      padding-top:4rem!important;
+   }
+   /* Header */
+   .header-main{
+      padding-left:2.5rem!important;
+      padding-right:2.5rem!important;
+   }
+   .logo .logo-header{
+      max-width: 115!important;
+   }
+   /* footer */
+   .footer-blocks{
+      padding-top:3rem!important;
+   }
+   /* home page */
+
+   /* Home Testimonials */
+   .testimonial-item{
+      padding-top:3.5rem!important;
+   }
+   .testimonial-area{
+      padding-top:4rem!important;
+   }
+   #testimonial-carousel .description,
+   h2 {
+      font-size:1.5rem!important;
+      
+   }
+
+
    .c--flex-text {
       /* width: 80vw; */
 
-      padding: 2rem !important;
+      padding: 2.5rem !important;
    }
    .c--flex-img {
       padding: 2rem;
    }
+
+   /* Product Testimonial */
+
+   .product--header--content .page--heading--primary {
+      width: 100%!important;
+   }
+
    .product--story {
       display: flex;
       flex-direction: column;
@@ -591,4 +641,29 @@ body {
 
 .img-responsive {
    width: 100vw !important;
+}
+
+
+@media (max-width: 479px){
+.header-logo img {
+    max-width: 125px;
+}
+
+}
+/* width issies styles , need to reposition those */
+
+.header-container {
+   height: auto;
+   width: 100%;
+   overflow-x: hidden;
+
+}
+.header-container .row {
+   margin: 0px;
+}
+.header-container.smaller {
+   z-index: 999;
+}
+header{
+   overflow-x: hidden!important;
 }
