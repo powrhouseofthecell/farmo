@@ -42,12 +42,8 @@ class ControllerInformationInformation extends Controller {
 			$data['content_bottom'] = $this->load->controller('common/content_bottom');
 			$data['footer'] = $this->load->controller('common/footer');
 			$data['header'] = $this->load->controller('common/header');
-			if($information_id==4){
-				$this->response->setOutput($this->load->view('information/aboutus', $data));
-			}else{
-				
-				$this->response->setOutput($this->load->view('information/information', $data));
-			}
+
+			$this->response->setOutput($this->load->view('information/information', $data));
 		} else {
 			$data['breadcrumbs'][] = array(
 				'text' => $this->language->get('text_error'),
