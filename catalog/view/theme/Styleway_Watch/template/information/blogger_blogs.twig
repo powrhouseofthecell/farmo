@@ -21,11 +21,11 @@
 		{% if blogs %} 
 			{% for blog in blogs %} 
 				<div class="panel-default">
-				<div class="panel-inner">
+				<div class="panel-inner c--blogs-grid">
 				{# <h4>{{ blog.name }}</h4> #}
 				{% if blog.blog_data %} 
 					{% for topic in blog.blog_data %} 
-					<div class="panel panel-default col-lg-6">
+					<div class="panel panel-default  col-lg-12">
 						<div class="panel-body">
 		
 							<div class="blog-left-content">
