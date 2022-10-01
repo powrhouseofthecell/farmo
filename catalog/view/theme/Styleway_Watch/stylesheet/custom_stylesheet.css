@@ -783,3 +783,38 @@ body {
 header{
    /* overflow-x: hidden!important; */
 } 
+
+
+@media (max-width: 575px) {
+   .subbanner-image1 {
+      margin-top: 2.5rem;
+   }
+}
+.col-sm-12 h1 {
+   text-align: center;
+}
+.col-sm-10 p {
+   text-align: center;
+}
+.category_filter {
+   margin-left: 3rem;
+}
+.product-layout {
+   margin-left: 3rem;
+}
+.col-sm-6 {
+   margin-left: 3rem !important;
+}
+
+#button-filter {
+   background-color: #777 !important;
+   text-decoration: none !important;
+   position: relative;
+   left: -25%;
+}
+
+#button-filter:hover {
+   background-color: rgb(34, 33, 33);
+   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+   text-decoration: underline !important;
+}
