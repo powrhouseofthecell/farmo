@@ -130,6 +130,7 @@ a:hover {
    justify-content: center;
 }
 
+
 .product--flex .c--product--info {
    
    flex: 2;
@@ -199,6 +200,7 @@ a:hover {
 .c--product--info .addthis_toolbox {
    margin-top: 1rem !important;
 }
+
 
 body {
    margin: 0;
@@ -409,9 +411,9 @@ body {
    color: white;
 }
 .almond--full-width-img {
-   margin-top: 2rem;
+   /* margin-top: 2rem; */
    height: 85vh;
-   background-image: url(../image/apricots/1.png);
+   background-image: url(https://images.indianexpress.com/2019/12/Dried-apricots_759.jpg);
    background-size: cover;
    background-position: center;
 }
@@ -469,7 +471,44 @@ body {
    margin:3rem 3rem;
 }
 
+/* Product Health Benefits Section */
+.product--hb{
+   padding-left: 3rem;
+   padding-right: 3rem;
+   /* margin-top:6rem; */
+   display: flex!important;
+   padding: 9rem;
+   /* align-items: center; */
+   justify-content: space-between;
+   height:80vh;
 
+}
+
+.product--hb .img--hb{
+   flex:1!important;
+}
+
+.product--hb .hb--info{
+   padding: 3rem;
+   flex:1!important;
+   align-self: center;
+   
+}
+.product--hb .saffron--hb{
+   background: gray url('https://static.wixstatic.com/media/1407c3_2acdd1ada38645a8bd0d98e3fc721510~mv2.jpg/v1/fill/w_849,h_625,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1407c3_2acdd1ada38645a8bd0d98e3fc721510~mv2.jpg')center center/cover;
+} 
+.product--hb .apricots--hb{
+   background: gray url('https://www.nutfruit.org/images/consumer-fruit/1570535097-apricot.png')center center/cover;
+} 
+.product--hb .walnut--hb{
+   background: gray url('https://static.wixstatic.com/media/1407c3_b791d733f6bc4ab4beb66a8a892df4d3~mv2.jpg/v1/fill/w_852,h_541,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1407c3_b791d733f6bc4ab4beb66a8a892df4d3~mv2.jpg')center center/cover;
+} 
+.product--hb .honey--hb{
+   background: gray url('https://static.wixstatic.com/media/1407c3_93b46bda2b7c46e0aa56e405f4d7a20d~mv2.png/v1/fill/w_500,h_500,al_c,q_90,usm_0.66_1.00_0.01/1407c3_93b46bda2b7c46e0aa56e405f4d7a20d~mv2.webp')center center/cover;
+} 
+.product--hb .morels--hb{
+   background: gray url('https://static.wixstatic.com/media/1407c3_db664ed852ae415186082464c1bf163c~mv2.jpeg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/1407c3_db664ed852ae415186082464c1bf163c~mv2.webp')center center/cover;
+} 
 /* Products Map Section Starts Here */
 
 .product--map--section{
@@ -603,6 +642,35 @@ body {
    .product--header--content .page--heading--primary {
       width: 100%!important;
    }
+
+   /* Product Health Benefits Section */
+   .product--hb{
+   padding-left: 2rem!important;
+   padding-right: 2rem!important;
+   padding-top: 4rem!important;
+   padding-bottom: 26rem!important;
+   margin-bottom: 14rem!important;
+   /* margin-top:6rem; */
+   display: flex!important;
+   flex-direction: column;
+   
+   justify-content: space-between;
+   /* height:80vh; */
+
+}
+
+.product--hb .img--hb{
+   flex:1!important;
+   padding-top:8rem;
+   padding-bottom:8rem;
+}
+
+.product--hb .hb--info{
+   padding: 5rem 1.3rem;
+   flex:1!important;
+   /* align-self: center; */
+   
+}
 
    .product--story {
       display: flex;
