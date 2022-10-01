@@ -1,18 +1,17 @@
-body {
-   /* display: none; */
-   /* background-color: #d1e06f!important; */
-}
-
+/* body {
+   display: none;
+   background-color: #d1e06f!important;
+} */
 
 a:hover {
    text-decoration: #fff !important;
 }
 
-.bg--white{
-   background-color: #fff!important;
+.bg--white {
+   background-color: #fff !important;
 }
 
-.bg--gray{
+.bg--gray {
    background-color: #333;
 }
 .product-block {
@@ -26,14 +25,11 @@ a:hover {
    display: none !important;
 }
 
-#content{
-   padding-top:4rem!important;
+#content {
+   padding-top: 4rem !important;
 }
 
 /* main slider */
-
-
-
 
 /* Typography */
 .font--bold {
@@ -50,16 +46,16 @@ a:hover {
 }
 
 /* margin and padding classes */
-.m--0{
-   margin:0!important;
+.m--0 {
+   margin: 0 !important;
 }
 
 .my--0 {
    margin-top: 0px;
 }
-.my--p5{
-   margin-top:0.2rem!important;
-   margin-bottom:0.2rem!important;
+.my--p5 {
+   margin-top: 0.2rem !important;
+   margin-bottom: 0.2rem !important;
 }
 .my--1 {
    margin-top: 1rem !important;
@@ -70,8 +66,8 @@ a:hover {
 .py--0 {
    padding-top: 0 !important;
 }
-.py--4{
-   padding-top:4rem!important;
+.py--4 {
+   padding-top: 4rem !important;
 }
 .p-2 {
    padding: 2rem !important;
@@ -96,18 +92,14 @@ a:hover {
    padding-bottom: 2rem;
 }
 
-.lh--1{
-   line-height: 1rem!important;
+.lh--1 {
+   line-height: 1rem !important;
 }
-.lh--3{
-   line-height: 3rem!important;
+.lh--3 {
+   line-height: 3rem !important;
 }
 
 /* Margin and padding classes ends here */
-
-
-
-
 
 /* flex classes starts here */
 
@@ -117,22 +109,20 @@ a:hover {
 }
 /* product  main container*/
 
-#product-product{
+#product-product {
    overflow-x: hidden;
 }
 
 /* product info section */
 .product--flex {
-   overflow-x: hidden!important;
+   overflow-x: hidden !important;
 
    /* width:90vw; */
    display: flex;
    justify-content: center;
 }
 
-
 .product--flex .c--product--info {
-   
    flex: 2;
    padding: 2rem 8rem !important;
 }
@@ -201,7 +191,6 @@ a:hover {
    margin-top: 1rem !important;
 }
 
-
 body {
    margin: 0;
    padding: 0;
@@ -219,12 +208,15 @@ body {
 .service_container,
 .block,
 .czbanners,
-.banners-slider-carousel,.product-tab,.single-blog,.all-blog {
+.banners-slider-carousel,
+.product-tab,
+.single-blog,
+.all-blog {
    padding-left: 3rem !important;
    padding-right: 3rem !important;
 }
-.box{
-   padding-top:2rem!important;
+.box {
+   padding-top: 2rem !important;
 }
 .czbanner_container {
    display: flex !important;
@@ -235,8 +227,6 @@ body {
    padding-left: 3rem !important;
    padding-right: 3rem !important;
 }
-
-
 
 /* Home Single Banner Image */
 .home--product--image {
@@ -251,54 +241,54 @@ body {
 #testimonial-carousel .description,
 #testimonial-carousel .name {
    color: white !important;
-   
 }
-#testimonial-carousel,.testimonial-area,
-#cztestimonialcmsblock{
-   background-color: #333!important;
+#testimonial-carousel,
+.testimonial-area,
+#cztestimonialcmsblock {
+   background-color: #333 !important;
 }
 
-#testimonial-carousel .testimonial-image{
-   display: none!important;
+#testimonial-carousel .testimonial-image {
+   display: none !important;
 }
-#testimonial-carousel .testimonial-detail{
-   margin-left:0!important;
-   text-align:center!important;
+#testimonial-carousel .testimonial-detail {
+   margin-left: 0 !important;
+   text-align: center !important;
 }
-#testimonial-carousel .testimonial-detail .quote_img{
-   display: none!important;
+#testimonial-carousel .testimonial-detail .quote_img {
+   display: none !important;
 }
-#testimonial-carousel .testimonial-detail .description{
-   padding:0!important;
+#testimonial-carousel .testimonial-detail .description {
+   padding: 0 !important;
 }
-#testimonial-carousel .testimonial-detail h2{
-   color:#fff!important;
+#testimonial-carousel .testimonial-detail h2 {
+   color: #fff !important;
 }
 
 /* About us Page */
 
-.c--info{
-   margin-top:1rem;
-   display: flex!important;
+.c--info {
+   margin-top: 1rem;
+   display: flex !important;
    /* justify-content: space-between; */
    align-items: center;
 }
 
-.c--info img{
+.c--info img {
    /* padding-left:3rem;
    padding-right:3rem; */
    margin-left: 6rem;
    margin-right: 6rem;
 }
-.c--info .c--description{
-   margin-left:5rem;
-   flex:2;
+.c--info .c--description {
+   margin-left: 5rem;
+   flex: 2;
 }
 /* All blogs page */
-.c--blogs-grid{
+.c--blogs-grid {
    display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap:1rem;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 1rem;
 }
 /* products styling starts here */
 
@@ -314,8 +304,8 @@ body {
 .product--header {
    display: flex;
    align-items: center;
-   justify-content: center!important;
-   
+   justify-content: center !important;
+
    height: 65vh;
    /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../image/almond--story.png); */
    background-color: #333;
@@ -323,15 +313,15 @@ body {
    /* background-position: top; */
    /* position: relative; */
 }
-.product--header .left--img,
+/* .product--header .left--img,
 .product--header .right--img {
    flex: 1;
-}
+} */
 
 .product--header--content {
    height: 65vh;
    flex: 3;
-   padding:1rem;
+   padding: 1rem;
    /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(../image/almond--story.png); */
    /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),url(../image/almond--story.png); */
    background-size: cover;
@@ -390,7 +380,7 @@ body {
    padding: 2.5rem !important;
    background-color: #333;
    color: white !important;
-   align-items: center!important;
+   align-items: center !important;
 }
 
 .c--flex-text {
@@ -433,18 +423,18 @@ body {
 }
 .honey--full-width-img {
    /* margin-top: 1rem; */
-   
+
    height: 85vh;
    /* background-image: url(../image/honey/1.jpg); */
    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
-         url(../image/honey/1.jpg);
-   
+      url(../image/honey/1.jpg);
+
    background-size: cover;
    background-position: bottom;
 }
 .morels--full-width-img {
    /* margin-top: 1rem; */
-   
+
    height: 85vh;
    background-image: url(../image/morels/1.jpg);
    background-size: cover;
@@ -457,88 +447,93 @@ body {
    padding: 2.5rem !important;
    justify-content: space-around;
    color: white !important;
-   align-items: center!important;
+   align-items: center !important;
 }
 
-.product--story{
+.product--story {
    display: flex;
 }
-.personal--story img{
-   margin:3rem 3rem;
+.personal--story img {
+   margin: 3rem 3rem;
 }
 
-.personal--story h3{
-   margin:3rem 3rem;
+.personal--story h3 {
+   margin: 3rem 3rem;
 }
 
 /* Product Health Benefits Section */
-.product--hb{
+.product--hb {
    padding-left: 3rem;
    padding-right: 3rem;
    /* margin-top:6rem; */
-   display: flex!important;
+   display: flex !important;
    padding: 9rem;
    /* align-items: center; */
    justify-content: space-between;
-   height:80vh;
-
+   height: 80vh;
 }
 
-.product--hb .img--hb{
-   flex:1!important;
+.product--hb .img--hb {
+   flex: 1 !important;
 }
 
-.product--hb .hb--info{
+.product--hb .hb--info {
    padding: 3rem;
-   flex:1!important;
+   flex: 1 !important;
    align-self: center;
-   
 }
-.product--hb .saffron--hb{
-   background: gray url('https://static.wixstatic.com/media/1407c3_2acdd1ada38645a8bd0d98e3fc721510~mv2.jpg/v1/fill/w_849,h_625,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1407c3_2acdd1ada38645a8bd0d98e3fc721510~mv2.jpg')center center/cover;
-} 
-.product--hb .apricots--hb{
-   background: gray url('https://www.nutfruit.org/images/consumer-fruit/1570535097-apricot.png')center center/cover;
-} 
-.product--hb .walnut--hb{
-   background: gray url('https://static.wixstatic.com/media/1407c3_b791d733f6bc4ab4beb66a8a892df4d3~mv2.jpg/v1/fill/w_852,h_541,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1407c3_b791d733f6bc4ab4beb66a8a892df4d3~mv2.jpg')center center/cover;
-} 
-.product--hb .honey--hb{
-   background: gray url('https://static.wixstatic.com/media/1407c3_93b46bda2b7c46e0aa56e405f4d7a20d~mv2.png/v1/fill/w_500,h_500,al_c,q_90,usm_0.66_1.00_0.01/1407c3_93b46bda2b7c46e0aa56e405f4d7a20d~mv2.webp')center center/cover;
-} 
-.product--hb .morels--hb{
-   background: gray url('https://static.wixstatic.com/media/1407c3_db664ed852ae415186082464c1bf163c~mv2.jpeg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/1407c3_db664ed852ae415186082464c1bf163c~mv2.webp')center center/cover;
-} 
+.product--hb .saffron--hb {
+   background: gray
+      url('https://static.wixstatic.com/media/1407c3_2acdd1ada38645a8bd0d98e3fc721510~mv2.jpg/v1/fill/w_849,h_625,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1407c3_2acdd1ada38645a8bd0d98e3fc721510~mv2.jpg')
+      center center/cover;
+}
+.product--hb .apricots--hb {
+   background: gray
+      url('https://www.nutfruit.org/images/consumer-fruit/1570535097-apricot.png')
+      center center/cover;
+}
+.product--hb .walnut--hb {
+   background: gray
+      url('https://static.wixstatic.com/media/1407c3_b791d733f6bc4ab4beb66a8a892df4d3~mv2.jpg/v1/fill/w_852,h_541,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1407c3_b791d733f6bc4ab4beb66a8a892df4d3~mv2.jpg')
+      center center/cover;
+}
+.product--hb .honey--hb {
+   background: gray
+      url('https://static.wixstatic.com/media/1407c3_93b46bda2b7c46e0aa56e405f4d7a20d~mv2.png/v1/fill/w_500,h_500,al_c,q_90,usm_0.66_1.00_0.01/1407c3_93b46bda2b7c46e0aa56e405f4d7a20d~mv2.webp')
+      center center/cover;
+}
+.product--hb .morels--hb {
+   background: gray
+      url('https://static.wixstatic.com/media/1407c3_db664ed852ae415186082464c1bf163c~mv2.jpeg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/1407c3_db664ed852ae415186082464c1bf163c~mv2.webp')
+      center center/cover;
+}
 /* Products Map Section Starts Here */
 
-.product--map--section{
+.product--map--section {
    display: flex;
-   flex:1;
-   padding:3rem;
+   flex: 1;
+   padding: 3rem;
    align-items: center;
 }
-.product--map--info{
+.product--map--info {
    /* padding:2rem; */
-   color:#fff;
-   margin:3rem 3rem;
+   color: #fff;
+   margin: 3rem 3rem;
 }
-.product--map--info *{
-   color:#fff;
+.product--map--info * {
+   color: #fff;
 }
-.product--map--info img{
-   padding:2rem;
+.product--map--info img {
+   padding: 2rem;
 }
-
 
 /* Info Pages */
-#information-information{
+#information-information {
    /* padding-left:2rem!important;
    padding-right:2rem!important; */
-   padding:5rem 2rem!important;
+   padding: 5rem 2rem !important;
    /* margin-top:5rem!important; */
 }
-
-
 
 /* Mobile Styling Starts Here */
 
@@ -560,7 +555,7 @@ body {
       flex-direction: column !important;
       justify-content: center;
    }
-   
+
    .c--flex {
       display: flex;
       flex-direction: column;
@@ -571,53 +566,52 @@ body {
    }
    /* All pages */
 
-   #content{
-      padding-top:4rem!important;
+   #content {
+      padding-top: 4rem !important;
    }
    /* Header */
    /* .header-main{
       padding-left:2.5rem!important;
       padding-right:2.5rem!important;
    } */
-   .logo .logo-header{
-      max-width: 115!important;
+   .logo .logo-header {
+      max-width: 115 !important;
    }
    /* footer */
-   .footer-blocks{
-      padding-top:3rem!important;
+   .footer-blocks {
+      padding-top: 3rem !important;
    }
    /* home page */
 
    /* Home Testimonials */
-   .testimonial-item{
-      padding-top:3.5rem!important;
+   .testimonial-item {
+      padding-top: 3.5rem !important;
    }
-   .testimonial-area{
-      padding-top:4rem!important;
+   .testimonial-area {
+      padding-top: 4rem !important;
    }
    #testimonial-carousel .description,
    h2 {
-      font-size:1.5rem!important;
-      
+      font-size: 1.5rem !important;
    }
 
    /* home Pages Banners */
-   #czbannercmsblock{
-      display: none!important;
+   #czbannercmsblock {
+      display: none !important;
    }
-   .cmsbanner img{
-      display: none!important;
-   };
-   .cmsbanner{
+   .cmsbanner img {
+      display: none !important;
+   }
+   .cmsbanner {
       background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
          url(../image/almond--story.png);
-         z-index: 999;
-   } 
+      z-index: 999;
+   }
 
    /* info pages */
    /* about */
 
-   .c--info{
+   .c--info {
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -630,47 +624,46 @@ body {
    }
    .c--flex-img {
       padding: 2rem;
+      width: 100vw;
    }
    /* all blogs  */
 
-   .c--blogs-grid{
+   .c--blogs-grid {
       grid-template-columns: 1fr;
-   grid-gap:1rem;
+      grid-gap: 1rem;
    }
    /* Product Testimonial */
 
    .product--header--content .page--heading--primary {
-      width: 100%!important;
+      width: 100% !important;
    }
 
    /* Product Health Benefits Section */
-   .product--hb{
-   padding-left: 2rem!important;
-   padding-right: 2rem!important;
-   padding-top: 4rem!important;
-   padding-bottom: 26rem!important;
-   margin-bottom: 14rem!important;
-   /* margin-top:6rem; */
-   display: flex!important;
-   flex-direction: column;
-   
-   justify-content: space-between;
-   /* height:80vh; */
+   .product--hb {
+      padding-left: 2rem !important;
+      padding-right: 2rem !important;
+      padding-top: 4rem !important;
+      padding-bottom: 26rem !important;
+      margin-bottom: 14rem !important;
+      /* margin-top:6rem; */
+      display: flex !important;
+      flex-direction: column;
 
-}
+      justify-content: space-between;
+      /* height:80vh; */
+   }
 
-.product--hb .img--hb{
-   flex:1!important;
-   padding-top:8rem;
-   padding-bottom:8rem;
-}
+   .product--hb .img--hb {
+      flex: 1 !important;
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+   }
 
-.product--hb .hb--info{
-   padding: 5rem 1.3rem;
-   flex:1!important;
-   /* align-self: center; */
-   
-}
+   .product--hb .hb--info {
+      padding: 5rem 1.3rem;
+      flex: 1 !important;
+      /* align-self: center; */
+   }
 
    .product--story {
       display: flex;
@@ -680,7 +673,7 @@ body {
       padding: 3rem 8px !important;
       margin: 0 !important;
    }
-   .product--map--section{
+   .product--map--section {
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -690,7 +683,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      overflow-x: hidden!important;
+      overflow-x: hidden !important;
 
       /* flex-direction: row-reverse!important; */
    }
@@ -767,12 +760,10 @@ body {
    width: 100vw !important;
 }
 
-
-@media (max-width: 479px){
-.header-logo img {
-    max-width: 125px;
-}
-
+@media (max-width: 479px) {
+   .header-logo img {
+      max-width: 125px;
+   }
 }
 /* width issies styles , need to reposition those */
 
