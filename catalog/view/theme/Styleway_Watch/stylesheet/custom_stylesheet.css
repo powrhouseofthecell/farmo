@@ -778,6 +778,6 @@ body {
 .header-container.smaller {
    z-index: 999;
 }*/
-header {
-   /* overflow-x: hidden!important; */
-}
+/* header {
+   overflow-x: hidden!important;
+} */
